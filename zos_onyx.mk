@@ -19,14 +19,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/onyx/device.mk)
 
 # Inherit some common Tipsy stuff.
-$(call inherit-product, vendor/tipsy/config/common_full_phone.mk)
+$(call inherit-product, vendor/zos/common.mk)
 
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/oneplus/onyx/onyx-vendor.mk)
 
-PRODUCT_NAME := tipsy_onyx
+PRODUCT_NAME := zos_onyx
 PRODUCT_DEVICE := onyx
 PRODUCT_MANUFACTURER := OnePlus
+PRODUCT_MODEL := X
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
@@ -37,3 +38,5 @@ TARGET_VENDOR_PRODUCT_NAME := onyx
 # FMRadio
 PRODUCT_PACKAGES += \
     FMRadio
+
+PRODUCT_BUILD_PROP_OVERRIDES += DEVICE_MAINTAINERS="Sarthak Narang"
