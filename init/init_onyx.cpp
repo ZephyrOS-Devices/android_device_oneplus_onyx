@@ -48,15 +48,15 @@ void vendor_load_properties()
 
     if (strstr(rf_version, "101")) {
         /* Chinese */
-        property_set("ro.product.model", "ONE E1001");
+        property_set("ro.product.model", "X");
         property_set("ro.rf_version", "TDD_FDD_Ch_All");
     } else if (strstr(rf_version, "102")) {
         /* Asia/Europe */
-        property_set("ro.product.model", "ONE E1003");
+        property_set("ro.product.model", "X");
         property_set("ro.rf_version", "TDD_FDD_Eu");
     } else if (strstr(rf_version, "103")){
         /* America */
-        property_set("ro.product.model", "ONE E1005");
+        property_set("ro.product.model", "X");
         property_set("ro.rf_version", "TDD_FDD_Am");
     }
 }
