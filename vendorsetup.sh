@@ -1,0 +1,2 @@
+add_lunch_combo zos_onyx-userdebug
+add_lunch_combo zos_onyx-eng
